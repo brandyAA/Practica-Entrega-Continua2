@@ -1,6 +1,23 @@
-Continuar usando el codigo o repositorio de la practica anterior.
+# Practica DevOps - TechBusinessRD
 
-- Usar Github Actions para automatizar  lo siguiente:
+## 🚀 Descripción
+Aplicación web estática desplegada usando Docker, GitHub Actions y Render.
 
-  [ ] Crear  subir imagen de la app a Docker Hub (se necesita api key de docker hub)
-  [ ] Hacer despliegue de la applicacion a produccion en render.com o cualquier otro proveedor (se requiere api key de render.com para hacer deploy automatico)
+## 🐳 Docker
+Se creó un Dockerfile usando nginx para servir la aplicación HTML.
+
+## 🔄 CI/CD
+Se implementó un pipeline con GitHub Actions que:
+- Construye la imagen Docker
+- La sube a Docker Hub
+- Despliega automáticamente en Render
+
+## 🌐 Deploy
+La aplicación está disponible en:
+https://practica-entrega-continua-9brg.onrender.com
+
+## 🛠 Tecnologías
+- HTML
+- Docker
+- GitHub Actions
+- Render
