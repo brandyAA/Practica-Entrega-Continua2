@@ -14,7 +14,7 @@ Se implementó un pipeline con GitHub Actions que:
 
 ## 🌐 Deploy
 La aplicación está disponible en:
-https://practica-entrega-continua-9brg.onrender.com
+https://practica-entrega-continua2.onrender.com
 
 ## 🛠 Tecnologías
 - HTML
