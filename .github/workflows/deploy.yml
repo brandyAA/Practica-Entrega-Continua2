@@ -21,17 +21,14 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: brandyaa
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:latest -t ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:${{ env.SHA_SHORT }} -t ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:${{ env.DATE }} .
+        run: docker build -t brandyaa/techbusiness-rd:latest .
 
-      - name: Push Docker images
-        run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:${{ env.SHA_SHORT }}
-          docker push ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:${{ env.DATE }}
+      - name: Push Docker image
+        run: docker push brandyaa/techbusiness-rd:latest
 
       - name: Trigger Render deploy
         run: |
