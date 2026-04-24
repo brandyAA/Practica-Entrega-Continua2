@@ -20,4 +20,4 @@ https://practica-entrega-continua2.onrender.com
 - HTML
 - Docker
 - GitHub Actions
-- Render
+- Render.
