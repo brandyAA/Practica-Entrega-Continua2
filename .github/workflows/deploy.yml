@@ -25,12 +25,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: |
-          docker build \
-            -t ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:latest \
-            -t ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:${{ env.SHA_SHORT }} \
-            -t ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:${{ env.DATE }} \
-            .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:latest -t ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:${{ env.SHA_SHORT }} -t ${{ secrets.DOCKER_USERNAME }}/techbusiness-rd:${{ env.DATE }} .
 
       - name: Push Docker images
         run: |
